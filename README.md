@@ -143,6 +143,30 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **Coding-ready?** Yes, via **Nemotron 3 Super** — the rest are small / task-specific. At $2.50 / $5 it's pricier than the cheap Chinese models, so $1 ≈ a few hundred K tokens; best for focused agentic runs.
     - **API key:** OpenAI-compatible, so it **works with 9router** and any OpenAI-style coding tool.
 
+14. [**Avian**](https://avian.io) (fast, affordable inference API)
+    - **Free credits:** **~$1 free** to start (add credits, no subscription) — pay-per-token after.
+    - **What it is:** A speed-focused inference API — all models run on **NVIDIA B200 GPUs with speculative decoding**, claiming the **fastest DeepSeek V3.2 inference** (~489 tok/s, ~4× OpenAI) with **no rate limits**. Built-in vision, web search / reader, and native tool calling.
+    - **Usable models (per 1M tokens, in / out):**
+        - **DeepSeek V4 Flash** — **$0.105 / $0.21** (1M ctx) — cheapest pick.
+        - **DeepSeek V3.2** — $0.23 / $0.33 (163K); **DeepSeek V4 Pro** — $1.305 / $2.61 (1M ctx).
+        - **MiniMax M2.5** — $0.27 / $1.08 (196K).
+        - **GLM-5** — $0.95 / $2.55 (205K); **GLM-5.1** — $1 / $3.2 (202K).
+        - **Kimi K2.5** — $0.45 / $2.2 (262K); **Kimi K2.6** — $0.95 / $4 (262K).
+    - **Coding-ready?** Yes — works with **Claude Code, Cursor, Cline, Windsurf, Kilo Code, Aider** (20+ tools); pair the $1 with DeepSeek V4 Flash for a *lot* of fast tokens.
+    - **API key:** OpenAI-compatible (base URL `https://api.avian.io/v1`, model e.g. `DeepSeek-V3.2`), so it **works with 9router**.
+
+15. [**EmberCloud**](https://embercloud.ai) (serverless GPU inference)
+    - **Free credits:** **~$1 free** on signup — serverless, **zero cold starts**, pay only for what you generate.
+    - **What it is:** Serverless GPU inference for **open-source models** with drop-in OpenAI APIs — effectively a **GLM specialist**, with very cheap **cached-input** rates.
+    - **Usable models (per 1M tokens, in / out):**
+        - **GLM 4.7 Flash** (30B MoE) — **$0.060 / $0.400** (200K) — cheapest.
+        - **Qwen3 Coder Next** — $0.108 / $0.675 (262K); **GLM 4.5 Air** — $0.130 / $0.850 (131K).
+        - **GLM 4.6** (Code) — $0.380 / $1.55 (200K); **GLM 4.7** (355B MoE) — $0.380 / $1.98 (200K).
+        - **GLM 5** (745B MoE) — $0.720 / $2.30 (203K); **GLM 5.1** — $0.931 / $2.93 (203K).
+        - **Kimi K2.5** — $0.405 / $1.98 (262K); **MiniMax M2.5** — $0.200 / $1.20 (196K); plus **GLM 4.5 / 4.5V** (vision).
+    - **Coding-ready?** Yes — strong GLM coding line (GLM 4.6 "Code", GLM 5 / 5.1) plus **Qwen3 Coder Next**; cached input is dirt cheap (e.g. GLM 4.7 Flash $0.010/M cached), so agentic loops stretch the $1 far.
+    - **API key:** OpenAI-compatible (base URL `https://api.embercloud.ai/v1`, key `ember_sk_...`, model e.g. `glm-4.7`), so it **works with 9router**.
+
 ## Contributing
 
 This list is maintained continuously and intentionally **churns**: expired promos and ended signup-credit offers are **deleted**, freshly discovered ones are **added**, and existing entries are updated when terms change. If an offer here has ended, it'll be pruned on the next update.
