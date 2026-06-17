@@ -2,7 +2,7 @@
 
 > A curated list of LLM inference platforms that hand out free credits you can use as AI coding models. *Updated regularly.*
 
-> **Last updated:** 16 Jun 2026, 09:19 GMT
+> **Last updated:** 17 Jun 2026, 03:01 GMT
 
 ## What is this?
 
@@ -166,6 +166,14 @@ Stacked together, this setup will **last you many tasks essentially for free** w
         - **Kimi K2.5** — $0.405 / $1.98 (262K); **MiniMax M2.5** — $0.200 / $1.20 (196K); plus **GLM 4.5 / 4.5V** (vision).
     - **Coding-ready?** Yes — strong GLM coding line (GLM 4.6 "Code", GLM 5 / 5.1) plus **Qwen3 Coder Next**; cached input is dirt cheap (e.g. GLM 4.7 Flash $0.010/M cached), so agentic loops stretch the $1 far.
     - **API key:** OpenAI-compatible (base URL `https://api.embercloud.ai/v1`, key `ember_sk_...`, model e.g. `glm-4.7`), so it **works with 9router**.
+
+16. **OrcaRouter** (by Continuum AI)
+    - **Free credits:** **$1 in free tokens** on signup with **GitHub** (no credit card). Key kicker: **zero markup** — you spend it at each provider's *exact* published rate, so $1 goes further than on gateways that add a 5–20% spread.
+    - **What it is:** An OpenAI-compatible **meta-router** over **200+ models** that grades each prompt and routes it (`orcarouter/auto`) to the best frontier or open model. MIT-licensed open core (OrcaRouter Lite), backed by published research and independently audited — so it clears the "no sketchy reseller" bar.
+    - **Sampled catalog (provider cost price, per 1M in / out):** `deepseek-v4-flash` **$0.147 / $0.294** (1M ctx, cheapest pick), `deepseek-v4-pro` $0.456 / $0.910, `qwen3.7-plus` $0.350 / $1.42, `kimi-k2.7-code` $0.950 / $4.00 (262K), `glm-5.2` $1.40 / $4.40. Frontier also available at direct price (Claude Opus 4.8, GPT-5.5, Gemini 3.5 Flash).
+    - **Coding-ready?** ✅ Yes — works with Cursor, Cline, OpenClaw, and Claude Code; spend the $1 on DeepSeek V4 Flash for millions of tokens.
+    - **✅ API key:** OpenAI-compatible (base URL `https://api.orcarouter.ai/v1`, key `sk-orca-...`, model e.g. `orcarouter/auto`), so it **works with 9router**.
+    - **⚠️ Note:** The $1 is a **one-time** signup credit; as a router, latency/availability ride on upstream providers (auto-failover across 200+ models helps).
 
 ## Contributing
 
