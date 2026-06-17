@@ -74,13 +74,14 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **Notes:** Requires a *Xiaomi account* to sign up. Each invitee can redeem *only one* code. The free-$2 signup reward is capped at the **first 30 redemptions per inviter** (Xiaomi's "signup-credit quota: 30 slots") — after that, neither side gets the $2. Bindings beyond 30 are still allowed, and those later invitees still get **10% off** their first Token Plan order while the inviter earns **10% credits back** on a friend's first paid order (first 30 paid orders, within a 30-day window). So your invitees' *purchases* keep paying off even after the free-$2 slots run out.
 
 6. [**ZenMux**](https://zenmux.ai) (enterprise LLM gateway)
-   - **Free credits:** Two **limited-time FREE** model promos running right now ($0 while they last):
+   - **Free credits:** Three **limited-time FREE** model promos running right now ($0 while they last):
      - **StepFun Step 3.7 Flash — free for ~1 month** (per StepFun's own announcement). A 198B sparse-MoE **vision-language** model (~11B active/token), **256K context**, up to ~400 tok/s, with 3 selectable reasoning levels (low / medium / high).
      - **Kimi K2.7 Code — limited 7-day free trial** (per ZenMux). Moonshot's most capable coding model: **+21.8% Kimi Code Bench v2**, +11% Program Bench, +31.5% MLS Bench Lite vs K2.6, with **~30% fewer reasoning tokens** (less overthinking). A HighSpeed variant (~180–260 tok/s) is also listed.
-   - **Usable models:** 200+ in total (Claude, GPT, Gemini, GLM, MiMo, DeepSeek, Qwen, Kimi...), but the genuinely *free* ones right now are the **two above**.
-   - **Coding-ready?** Yes — both promo models are built for agentic coding and work with Claude Code, OpenClaw, Cursor, and other OpenAI/Anthropic-compatible tools.
+     - **GLM-5.2 — limited ~1-week free trial** (per ZenMux). Zhipu's new flagship: **1M context**, two thinking-effort levels, MIT open weights, and one of the strongest domestic coding models. Free window runs ~until around **June 20, 2026** (launched Jun 13).
+   - **Usable models:** 200+ in total (Claude, GPT, Gemini, GLM, MiMo, DeepSeek, Qwen, Kimi...), but the genuinely *free* ones right now are the **three above**.
+   - **Coding-ready?** Yes — all three promo models are built for agentic coding and work with Claude Code, OpenClaw, Cursor, and other OpenAI/Anthropic-compatible tools.
    - **API key:** Standard OpenAI- & Anthropic-compatible API key (base URL `https://zenmux.ai/api/v1`, plus `https://zenmux.ai/api/anthropic`), so it **works with 9router**. Bonus: ZenMux offers "AI Model Insurance" that compensates you for subpar/hallucinated output.
-   - **Notes:** Both deals are *time-boxed* (Step 3.7 Flash ~1 month, Kimi K2.7 Code 7 days) — after they end, those models revert to paid. ZenMux's *general* free tier is **tight** (reportedly ~$0.16 per rolling 5-hour window, and you must keep a positive balance), so treat this as "free **for these two models, for now**," not an unlimited free tier.
+   - **Notes:** These deals are **time-boxed** (Step 3.7 Flash ~1 month, Kimi K2.7 Code 7 days, GLM-5.2 ~1 week) — after they end, those models revert to paid. ZenMux's *general* free tier is **tight** (reportedly ~$0.16 per rolling 5-hour window, and you must keep a positive balance), so treat this as "free **for these three models, for now**," not an unlimited free tier.
 
 7. [**Novita AI**](https://novita.ai) (AI-native cloud / model gateway)
    - **Nex-N2-Pro — currently Free / Free** here too (same limited-time $0 deal as on SiliconFlow).
