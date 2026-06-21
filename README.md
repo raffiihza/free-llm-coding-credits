@@ -47,14 +47,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **Coding-ready?** Yes — MiniMax M3 is a frontier open-weight coding/agentic model (1M context, ~59% SWE-Bench Pro).
    - **API key:** Exposes a standard API key (base URL `https://api.tokenrouter.com/v1`, model `MiniMax-M3`), so it **works with 9router** and any OpenAI-compatible coding tool.
 
-3. [**0G Private Computer**](https://pc.0g.ai) (by 0G Labs)
-   - **Free credits:** **100% FREE MiniMax M3** during a 3-day launch campaign, **June 15–18, 2026 (12:00 UTC)**. $0 cost — you just need ~1 $0G in your account to verify you're a real user. No application flow.
-   - **Usable models:** MiniMax-M3 (free during the campaign), plus other models (e.g., GLM) on the decentralized compute network.
-   - **Coding-ready?** Yes — MiniMax M3 is a frontier coding/agentic model (1M context, ~59% SWE-Bench Pro).
-   - **API key:** Exposes an OpenAI-compatible Router endpoint (base URL `https://router-api.0g.ai/v1`, API key `sk-...`), so it **works with 9router**. It's a decentralized/on-chain platform — inference runs inside hardware-isolated TEE enclaves (private + verifiable).
-   - **Note:** The free MiniMax M3 window is short (Jun 15–18). After it ends, it reverts to pay-per-use (payable via crypto or, per 0G, credit/debit card).
-
-4. [**SiliconFlow**](https://www.siliconflow.com)
+3. [**SiliconFlow**](https://www.siliconflow.com)
    - **Limited-time FREE: [Nex-N2-Pro](https://www.siliconflow.com/models/nex-n2-pro)** — currently **$0.00 / M tokens** (both input *and* output) on SiliconFlow serverless. This is the headline deal: a frontier open-weight agentic coding model running for free right now.
      - **Why it matters:** Nex-N2-Pro (by Nex AGI, Apache 2.0, 397B MoE / 17B active, built on Qwen3.5) rivals GPT-5.5 & Claude Opus 4.7 on coding — **80.8 SWE-Bench Verified, 75.3 Terminal-Bench 2.1, 58.8 SWE-Bench Pro**, with a **262K context**. Plug-and-play with Claude Code, Cursor, and agentic harnesses.
      - **Note:** The $0 pricing is promotional/limited-time — grab it while it lasts. (Also available free on OpenRouter as `nex-agi/nex-n2-pro:free`.)
@@ -64,7 +57,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **Rate limits:** Free models capped at ~50 req/day; a small lifetime top-up (>=10 CNY) raises it to ~1,000 req/day.
    - **API key:** Exposes a standard API key (base URL `https://api.siliconflow.com/v1`), so it **works with 9router**.
 
-5. [**Xiaomi MiMo**](https://platform.xiaomimimo.com) (Xiaomi MiMo API Open Platform)
+4. [**Xiaomi MiMo**](https://platform.xiaomimimo.com) (Xiaomi MiMo API Open Platform)
    - **Free credits:** around **$0.72 welcome bonus** on signup, plus an extra **$2** if you redeem another user's invite code or your friend redeems your invite code → **~$2.72 total** to start. (Xiaomi's official *Refer & earn*: both the inviter and invitee get **$2** in trial credits, granted instantly.)
    - **Usable models:** `mimo-v2.5-pro` (flagship — 1T params / 42B active, **1M context**, MIT-licensed, rivals Claude Opus 4.6 on agentic coding) and `mimo-v2.5` (native multimodal, 1M context), plus the older V2 series.
    - **Why ~$2.72 stretches far:** MiMo took a **permanent price cut (up to ~99%)**, and it's *especially* cheap on **cache hits** — MiMo-V2.5-Pro runs about $1.31/M input (cache miss) & $2.61/M output, but only **about $0.011/M on a cache hit**; MiMo-V2.5 drops to **~$0.003/M on a cache hit**. Agentic coding tends to hit cache often, so that small bonus goes a long way. (Cache *writes* are temporarily free.)
@@ -73,7 +66,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **No-login option — MiMo Code + "MiMo Auto":** Xiaomi's open-source terminal coding agent [**MiMo Code**](https://github.com/XiaomiMiMo/MiMo-Code) ships with a built-in **"MiMo Auto"** channel that's *free for a limited time*, zero-config, and *fully anonymous — no login, no API key*. It runs **MiMo-V2.5** (1M context), so you can start coding instantly. Install with `curl -fsSL https://mimo.xiaomi.com/install | bash` (macOS/Linux) or `npm install -g @mimo-ai/cli` (Windows). **Routable via 9router, but questionable:** 9router can pull it in via an **unofficial OAuth / cookie / MITM-bridge interception** that isn't sanctioned and can **trigger an account / IP / device ban**. So while it works, the **official harness is strongly preferred** — run the free MiMo-V2.5 quota directly inside MiMo Code.
    - **Notes:** Requires a *Xiaomi account* to sign up. Each invitee can redeem *only one* code. The free-$2 signup reward is capped at the **first 30 redemptions per inviter** (Xiaomi's "signup-credit quota: 30 slots") — after that, neither side gets the $2. Bindings beyond 30 are still allowed, and those later invitees still get **10% off** their first Token Plan order while the inviter earns **10% credits back** on a friend's first paid order (first 30 paid orders, within a 30-day window). So your invitees' *purchases* keep paying off even after the free-$2 slots run out.
 
-6. [**ZenMux**](https://zenmux.ai) (enterprise LLM gateway)
+5. [**ZenMux**](https://zenmux.ai) (enterprise LLM gateway)
    - **Free credits:** Three **limited-time FREE** model promos running right now ($0 while they last):
      - **StepFun Step 3.7 Flash — free for ~1 month** (per StepFun's own announcement). A 198B sparse-MoE **vision-language** model (~11B active/token), **256K context**, up to ~400 tok/s, with 3 selectable reasoning levels (low / medium / high).
      - **Kimi K2.7 Code — limited 7-day free trial** (per ZenMux). Moonshot's most capable coding model: **+21.8% Kimi Code Bench v2**, +11% Program Bench, +31.5% MLS Bench Lite vs K2.6, with **~30% fewer reasoning tokens** (less overthinking). A HighSpeed variant (~180–260 tok/s) is also listed.
@@ -83,7 +76,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **API key:** Standard OpenAI- & Anthropic-compatible API key (base URL `https://zenmux.ai/api/v1`, plus `https://zenmux.ai/api/anthropic`), so it **works with 9router**. Bonus: ZenMux offers "AI Model Insurance" that compensates you for subpar/hallucinated output.
    - **Notes:** These deals are **time-boxed** (Step 3.7 Flash ~1 month, Kimi K2.7 Code 7 days, GLM-5.2 ~1 week) — after they end, those models revert to paid. ZenMux's *general* free tier is **tight** (reportedly ~$0.16 per rolling 5-hour window, and you must keep a positive balance), so treat this as "free **for these three models, for now**," not an unlimited free tier.
 
-7. [**Novita AI**](https://novita.ai) (AI-native cloud / model gateway)
+6. [**Novita AI**](https://novita.ai) (AI-native cloud / model gateway)
    - **Nex-N2-Pro — currently Free / Free** here too (same limited-time $0 deal as on SiliconFlow).
    - **Free credits:** **$1 free credit** granted automatically on signup (no credit card; sign up with Google / GitHub / Hugging Face / email). New accounts also get **$100 in Agent Sandbox credits** (valid 90 days) if you build agents there.
    - **Why it's great for cheap Chinese models:** Novita hosts 200+ open models and is one of the cheapest places to run the strong Chinese ones. Standout cheap picks (serverless, per 1M tokens):
@@ -95,7 +88,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **API key:** OpenAI-compatible (base URL `https://api.novita.ai/openai`), so it **works with 9router** and any OpenAI-style coding tool.
    - **Note:** The $1 is a *one-time* signup credit (not recurring) — but on these cheap models that's still a lot of tokens. Prices above change over time; check the live pricing page before relying on them.
 
-8. [**Z Code (ZCODE)**](https://zcode.z.ai) (by [Z.ai](http://Z.ai) / Zhipu)
+7. [**Z Code (ZCODE)**](https://zcode.z.ai) (by [Z.ai](http://Z.ai) / Zhipu)
    - **Free credits:** A **limited-time launch promo** tied to the GLM-5.2 release (Jun 13, 2026): a generous **free daily quota** inside [Z.ai](http://Z.ai)'s own coding harness — reportedly **~3M tokens/day of GLM-5.2** and **~2M tokens/day of GLM-5-Turbo**, running **until ~June 19, 2026**.
    - **What is ZCODE?** [Z.ai](http://Z.ai)'s own **agentic development environment** — a GUI desktop app (macOS/Windows) plus coding CLI that can run **multiple collaborating agents**, work over SSH / remote machines, and use built-in **skills** (e.g. an auto-triggered "frontend design" skill) and **MCP** services.
    - **Usable models:** **GLM-5.2** (flagship — **1M context**, two thinking-effort levels High/Max, MIT open weights announced; rivals Claude Opus-tier coding) and **GLM-5-Turbo** (fast, agent-optimized variant for long execution chains).
@@ -103,7 +96,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **9router compatibility — caution:** Unlike most entries here, this free quota is best used **directly inside ZCODE / officially supported tools**. [Z.ai](http://Z.ai)'s GLM Coding Plan terms **restrict usage to officially supported tools** and explicitly warn that **SDK-based or third-party access may have benefits throttled or blocked**. So routing the free quota through 9router (or other proxies) risks getting restricted — treat ZCODE as a use-it-in-the-harness deal, not a 9router source. (If you do want API access, the GLM Coding Plan endpoint is `https://api.z.ai/api/coding/paas/v4`, Anthropic/OpenAI-compatible.)
    - **Note:** This is a short launch-window freebie (~until Jun 19). After it ends, GLM-5.2 / GLM-5-Turbo revert to consuming normal Coding Plan quota (paid subscription, from ~$3–$18/mo for the Lite tier).
 
-9. [**UniModel.ai**](http://UniModel.ai) (NewAPI-based unified gateway)
+8. [**UniModel.ai**](http://UniModel.ai) (NewAPI-based unified gateway)
    - **Free credits:** **~$10 in free credits** on signup *(per the current promo — confirm in-app, as the exact amount isn't published on the landing page)*.
    - **What it is:** A unified API **gateway** built on the open-source **NewAPI** stack — it aggregates **50+ upstream providers** and **100+ models** behind one OpenAI / Anthropic / Gemini-compatible endpoint (`/v1/chat/completions`), with multi-key routing, load balancing, and real-time usage tracking.
    - **Usable models:** A broad mix routed from upstreams — GPT, Claude, Gemini, plus the cheap Chinese models (DeepSeek, Qwen, GLM, Kimi, MiniMax). Spend the free credit on the cheap Chinese ones for maximum mileage.
@@ -111,7 +104,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
    - **API key:** Standard OpenAI-compatible key, so it **works with 9router** and any OpenAI-style coding tool.
    - **Note:** UniModel is a NewAPI-style management platform (you configure channels/keys), and the **$10 figure is promo / user-reported** — verify the current welcome credit after signing up.
 
-10. [**Zyloo**](https://zyloo.io) (unified API at "the cheapest price")
+9. [**Zyloo**](https://zyloo.io) (unified API at "the cheapest price")
     - **Free credits:** **$5 free** welcome credit on signup.
     - **Supports Claude (paid, not free):** Yes — **9 Anthropic models** are available, e.g. Claude Fable 5 / Opus 4.7–4.8 at **$5 / $25** per 1M, **Opus 4.6 at $3 / $20**, down to a cheaper Claude at **$1 / $5** (200K ctx). All pay-per-token from your $5 credit.
     - **Usable models:** **34 models across 10 providers** behind one OpenAI-compatible endpoint — Anthropic (9), OpenAI (6), Google (2), xAI (3), DeepSeek (3), Moonshot/Kimi (3), Qwen (3), Zhipu/GLM (1), MiniMax (2), Xiaomi/MiMo (2).
@@ -119,7 +112,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **Coding-ready?** Yes — frontier coding models (Claude Opus, GPT-5.5, Kimi) are all available; just swap your `baseURL`.
     - **API key:** Standard OpenAI-compatible key (base URL `https://zyloo.io/v1`, key `sk-zy-...`), so it **works with 9router**.
 
-11. [**Berget AI**](https://berget.ai) (EU / Swedish sovereign inference)
+10. [**Berget AI**](https://berget.ai) (EU / Swedish sovereign inference)
     - **Free credits:** **€5 free starting credits** on the Free plan (pay-as-you-go after that; any leftover balance rolls over).
     - **Optimal pick — Kimi K2.6:** open-weight **SOTA coding / agent** model (1T params, **256K context**, agent-swarm capable) at roughly **~88% cheaper than Claude Opus** — the best value here for serious coding.
     - **Usable models (open only):** **Kimi K2.6**, **GLM-4.7** (confirmed in their lineup), DeepSeek, Llama 3.3 70B, Mistral Small 3.1, Qwen3, GPT-OSS 120B, plus rerank / moderation / speech models. *(Berget hosts open models only — no GPT / Claude / Gemini. The list changes, so check their models page.)*
@@ -127,7 +120,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **API key:** OpenAI-compatible (base URL `https://api.berget.ai/v1`; set up via `npx berget auth login` then `npx berget api-keys create`), so it **works with 9router**.
     - **Bonus:** EU-hosted, **100% fossil-free** electricity, and data stays inside EU borders — the privacy / sovereignty-friendly option.
 
-12. [**TokenLab**](https://tokenlab.sh) (agent-first AI gateway)
+11. [**TokenLab**](https://tokenlab.sh) (agent-first AI gateway)
     - **Free credits:** **~$1 in trial credits** on signup (no card) — enough to make real calls and test fit before topping up pay-as-you-go.
     - **What it is:** A one-key **AI gateway** to **200+ models** (text, image, *and* video) with both **native and OpenAI-compatible routes**, auto-failover, agent-readable errors, and a claimed **30–70% lower cost** than going direct.
     - **Usable models:** GPT 5.5, **Claude 4 family** (Sonnet / Opus / Haiku 4.x — incl. 4.5 / 4.6), Gemini 3, DeepSeek, Meta (Llama), Mistral, Perplexity, Cohere — plus image/video (Nano Banana, Flux, Veo 3, Seedance, Midjourney, Luma).
@@ -135,7 +128,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **API key:** Standard OpenAI-compatible key (point your `baseURL` at TokenLab with a TokenLab key; endpoint `/v1/chat/completions`), so it **works with 9router**. *(Tip: for native Claude/Gemini features like prompt caching & thinking mode, use the matching native routes.)*
     - **Note:** The $1 is a one-time trial credit; on premium models (GPT / Claude) it won't go far — pair it with a cheap model for real mileage.
 
-13. [**Inference.net**](http://Inference.net) (full-stack LLM lifecycle platform)
+12. [**Inference.net**](http://Inference.net) (full-stack LLM lifecycle platform)
     - **Free credits:** **~$1 free credit** on signup to make real API calls, then pay-as-you-go.
     - **What it is:** A deploy / observe / train / evaluate platform for production agents, serving open models through **OpenAI-compatible APIs** (SOC 2 Type II).
     - **The coding pick — Nemotron 3 Super:** NVIDIA's open **hybrid Mamba-Transformer MoE** (120B total / 12B active, **1M context**, tool calling, fully open weights) built for **agentic reasoning** — **the only model here strong enough for real coding**. Priced **$2.50 / $5.00** per 1M tokens.
@@ -143,7 +136,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **Coding-ready?** Yes, via **Nemotron 3 Super** — the rest are small / task-specific. At $2.50 / $5 it's pricier than the cheap Chinese models, so $1 ≈ a few hundred K tokens; best for focused agentic runs.
     - **API key:** OpenAI-compatible, so it **works with 9router** and any OpenAI-style coding tool.
 
-14. [**Avian**](https://avian.io) (fast, affordable inference API)
+13. [**Avian**](https://avian.io) (fast, affordable inference API)
     - **Free credits:** **~$1 free** to start (add credits, no subscription) — pay-per-token after.
     - **What it is:** A speed-focused inference API — all models run on **NVIDIA B200 GPUs with speculative decoding**, claiming the **fastest DeepSeek V3.2 inference** (~489 tok/s, ~4× OpenAI) with **no rate limits**. Built-in vision, web search / reader, and native tool calling.
     - **Usable models (per 1M tokens, in / out):**
@@ -155,7 +148,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **Coding-ready?** Yes — works with **Claude Code, Cursor, Cline, Windsurf, Kilo Code, Aider** (20+ tools); pair the $1 with DeepSeek V4 Flash for a *lot* of fast tokens.
     - **API key:** OpenAI-compatible (base URL `https://api.avian.io/v1`, model e.g. `DeepSeek-V3.2`), so it **works with 9router**.
 
-15. [**EmberCloud**](https://embercloud.ai) (serverless GPU inference)
+14. [**EmberCloud**](https://embercloud.ai) (serverless GPU inference)
     - **Free credits:** **~$1 free** on signup — serverless, **zero cold starts**, pay only for what you generate.
     - **What it is:** Serverless GPU inference for **open-source models** with drop-in OpenAI APIs — effectively a **GLM specialist**, with very cheap **cached-input** rates.
     - **Usable models (per 1M tokens, in / out):**
@@ -167,7 +160,7 @@ Stacked together, this setup will **last you many tasks essentially for free** w
     - **Coding-ready?** Yes — strong GLM coding line (GLM 4.6 "Code", GLM 5 / 5.1) plus **Qwen3 Coder Next**; cached input is dirt cheap (e.g. GLM 4.7 Flash $0.010/M cached), so agentic loops stretch the $1 far.
     - **API key:** OpenAI-compatible (base URL `https://api.embercloud.ai/v1`, key `ember_sk_...`, model e.g. `glm-4.7`), so it **works with 9router**.
 
-16. [**OrcaRouter**](https://www.orcarouter.ai/) (by Continuum AI)
+15. [**OrcaRouter**](https://www.orcarouter.ai/) (by Continuum AI)
     - **Free credits:** **$1 in free tokens** on signup with **GitHub** (no credit card). Key kicker: **zero markup** — you spend it at each provider's *exact* published rate, so $1 goes further than on gateways that add a 5–20% spread.
     - **What it is:** An OpenAI-compatible **meta-router** over **200+ models** that grades each prompt and routes it (`orcarouter/auto`) to the best frontier or open model. MIT-licensed open core (OrcaRouter Lite), backed by published research and independently audited — so it clears the "no sketchy reseller" bar.
     - **Sampled catalog (provider cost price, per 1M in / out):** `deepseek-v4-flash` **$0.147 / $0.294** (1M ctx, cheapest pick), `deepseek-v4-pro` $0.456 / $0.910, `qwen3.7-plus` $0.350 / $1.42, `kimi-k2.7-code` $0.950 / $4.00 (262K), `glm-5.2` $1.40 / $4.40. Frontier also available at direct price (Claude Opus 4.8, GPT-5.5, Gemini 3.5 Flash).
