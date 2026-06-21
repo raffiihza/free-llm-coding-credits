@@ -2,7 +2,7 @@
 
 > A curated list of LLM inference platforms that hand out free credits you can use as AI coding models. *Updated regularly.*
 
-> **Last updated:** 17 Jun 2026, 03:01 GMT
+> **Last updated:** 21 Jun 2026
 
 ## What is this?
 
